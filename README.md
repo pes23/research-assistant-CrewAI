@@ -28,7 +28,16 @@ research-assistant-crew/
 5. Reasoning Techniques: Methodology Critic 에이전트가 선행 연구의 한계점을 도출할 때 생각을 단계별로 풀어내는 Chain-of-Thought 방식을 사용한다.
 
 ## 실행 방법 
-### 1. 필수 라이브러리 설치 
+1. 환경변수 설정
+```bash
+cp .env.example .env 
+# .env 파일에 GEMINI_API_KEY 입력
+
+2. 필수 라이브러리 설치 
 터미널에서 아래 명령어를 실행하여 필수 패키지를 설치 후 main_research.py 실행.
 ```bash
 pip install crewai crewai-tools python-dotenv
+
+3. 실행
+```bash
+python main_research.py 
